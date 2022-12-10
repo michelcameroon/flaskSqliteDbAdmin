@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>courses</title>
+
+</head>
+
+<body>
+
+    <h1>list courses</h1>
+
+
+
+      <a href="{{ url_for('coursesNew') }}">New course</a>
+
+
+
+     <h2> List </h2>
+
+
+
+       <table border=1>
+
+       {% for course in courses %}
+
+<!--         <tr><td> {{course}}</td><td>in loop </td></tr> -->
+
+         <tr><td> {{course}}</td></tr>
+
+       {% endfor %}
+
+       </table>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
